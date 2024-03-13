@@ -8,31 +8,38 @@
     <title>To Do App - Samuel Aggor</title>
   </head>
   <body>
-    <div class="todo_Container">
+    <div class="todo-wrapper">
       <div class="todo-body">
-        <h1>To-Do App</h1>
-        <div class="row">
-          <input type="text" placeholder="Please enter your task..." id="entry">
-          <button>ADD TASK</button>
-        </div>
-        <div class="todo-task-entries">
-          <h2>Task Entries</h2>
+        <header>
+          <h1>To Do List - Samuel Aggor</h1>
+          <form>
+            <input type="text" id="new-entry-input"/>
+            <input type="submit" id="new-entry-submit"/>
+          </form>
+        </header>
 
-          <div class="task">
-            <div class="entry">
-              <input type="text" class="entry-message" value ="My first task" readonly>
+        <main>
+          <section class="entry-log">
+            <h2>Task Entries</h2>
+            <div class="line"></div>
+            <div id="entries">
+              <div class="logEntries">
+                <input
+                  type="text"
+                  class="message"
+                  value="My First Task"
+                  readonly
+                />
+              </div>
+              <div class="entry-actions">
+                <button class="edit">Edit</button>
+                <button class="edit">Completed</button>
+                <button class="delete">Delete</button>
+              </div>
             </div>
-            <div class="task-actions">
-              <button>Edit</button>
-              <button>Delete</button>
-            </div>
-          </div>
-         
-          </div>
-
-        </div>
+          </section>
+        </main>
       </div>
-        
     </div>
 
     <script src="app.js"></script>
