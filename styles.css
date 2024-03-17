@@ -1,78 +1,77 @@
-
-
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     border: 1px solid red;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     /* overflow: hidden; */
 }
 
-:root{
-   --backgroundC: rgb(38, 17, 79);
-   --blanc: #fff;
-   --opacityGlassmorph: 0.1;
+:root {
+    --backgroundC: rgb(38, 17, 79);
+    --blanc: #fff;
+    --opacityGlassmorph: 0.1;
 
 }
 
 
 
-.todo-wrapper{
+.todo-wrapper {
     display: flex;
     flex-direction: column;
-    width:100%;
+    width: 100%;
     color: var(--blanc);
     height: 100vh;
     background-color: var(--backgroundC);
 }
 
-.todo-body{
+.todo-body {
     background-color: rgba(255, 255, 255, 0.2);
-    width: 90vw;
+    width: 60vw;
     height: auto;
-    position:absolute;
+    position: absolute;
     border-radius: 1rem;
     box-shadow: .5rem .5rem .5rem black;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -97%);
 
 }
 
-header{
+header {
     padding: 2rem 4rem;
     max-width: 800px;
     width: 100%;
     margin: 3rem auto 1rem;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-header h1{
+header h1 {
     font-size: 2.5rem;
     font-weight: 300;
     margin-bottom: 1rem;
-    
+
 }
 
 
-input, button{
+input,
+button {
     outline: none;
 }
 
-form{
+form {
     width: 110%;
     height: 7vh;
     display: inline-block;
 }
 
-#new-entry-input{
+#new-entry-input {
     justify-content: space-between;
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
     width: 70%;
     padding: 1rem;
     font-size: 1.2rem;
@@ -84,8 +83,8 @@ form{
 }
 
 
-#new-entry-submit{
-    width:20%;
+#new-entry-submit {
+    width: 20%;
     margin-top: 1rem;
     margin-bottom: 0.6rem;
     padding: 1rem;
@@ -95,17 +94,17 @@ form{
 
 
 
-.entry-log{
+.entry-log {
     padding: 1rem;
 }
 
-h2{
+h2 {
     font-size: 2.5rem;
     margin-left: 2rem;
     padding: 1rem 1rem 0;
 }
 
-.line{
+.line {
     width: 95%;
     height: 2%;
     margin-top: 0.2rem;
@@ -114,32 +113,48 @@ h2{
     border-bottom: 2px solid white;
 }
 
-#entries{
-    display:flex;
+#entries {
+    display: flex;
     justify-content: space-between;
-    padding:1rem;
+    padding: 1rem;
     margin-left: 2rem;
 }
 
-.logEntries{
+.logEntries {
     width: 75%;
     padding: 1rem;
 }
 
-.message{
+.message {
     font-size: 1.7rem;
     border-radius: 0.5rem;
     padding: 1rem;
     width: 100%;
 }
 
-.entry-actions{
+.entry-actions {
     width: 23%;
-    padding: 1rem;
+    padding: 1.9rem 1.28rem;
 }
 
-.edit{
-
+.edit {
+    font-size: 1.1rem;
+    padding: 0.7rem;
+    border-radius: 0.4rem;
 }
 
-.completed
+.completed {
+    font-size: 1.1rem;
+    padding: 0.7rem;
+    border-radius: 0.4rem;
+}
+
+.delete {
+    font-size: 1.1rem;
+    padding: 0.7rem;
+    border-radius: 0.4rem;
+}
+
+.show{
+    padding-left: 4rem;
+}
