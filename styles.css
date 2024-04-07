@@ -2,159 +2,77 @@
     margin: 0;
     padding: 0;
     border: 1px solid red;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     box-sizing: border-box;
-    /* overflow: hidden; */
+    overflow:hidden;
 }
 
-:root {
-    --backgroundC: rgb(38, 17, 79);
-    --blanc: #fff;
-    --opacityGlassmorph: 0.1;
-
+:root{
+    --appBackgroundColor: rgb(17, 17, 38);
+    --entry-font-color:rgb(255, 255, 255);
+    --edit-icon-color: rgb(0, 0, 255);
+    --complete-icon-color: rgb(0, 255, 0);
+    --remove-icon-color: rgb(255, 0, 0);
 }
 
-
-
-.todo-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    color: var(--blanc);
+body{
     height: 100vh;
-    background-color: var(--backgroundC);
+    width: 100vw;
 }
 
-.todo-body {
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 60vw;
-    height: auto;
+
+.todoApp{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgb(17, 17, 38);
+}
+
+.todo-container{
     position: absolute;
-    border-radius: 1rem;
-    box-shadow: .5rem .5rem .5rem black;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -97%);
-
+    width: 30%;
+    height: auto;
+    transform: translate(-50%, -60%);
+    background-color: whitesmoke;
+    box-shadow: .8rem .8rem .6rem black;
+    border-radius: .7rem;
+    padding: 1.5em 1em;
 }
-
-header {
-    padding: 2rem 4rem;
-    max-width: 800px;
-    width: 100%;
-    margin: 3rem auto 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
-header h1 {
-    font-size: 2.5rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
-
-}
-
-
-input,
-button {
+button{
+    cursor: pointer;
+    appearance: none;
+    background: none;
     outline: none;
+    border: none;
+
+}
+.blue{
+    color:blue;
+}
+.green{
+    color: green;
 }
 
-form {
-    width: 110%;
-    height: 7vh;
-    display: inline-block;
+.red{
+    color: red;
+}
+.white{
+    color:var(--entry-font-color);
 }
 
-#new-entry-input {
-    justify-content: space-between;
-    background-color: rgb(255, 255, 255);
-    width: 70%;
-    padding: 1rem;
-    font-size: 1.2rem;
-    margin-left: 1rem;
-    margin-right: 2rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    border-radius: 1rem;
-}
-
-
-#new-entry-submit {
-    width: 20%;
-    margin-top: 1rem;
-    margin-bottom: 0.6rem;
-    padding: 1rem;
-    border-radius: 1rem;
-    font-size: 1.2rem;
-}
-
-
-
-.entry-log {
-    padding: 1rem;
-}
-
-h2 {
-    font-size: 2.5rem;
-    margin-left: 2rem;
-    padding: 1rem 1rem 0;
-}
-
-.line {
-    width: 95%;
-    height: 2%;
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
-    margin-left: 3rem;
-    border-bottom: 2px solid white;
-}
-
-#entries {
+.task-entry{
     display: flex;
+    align-items:center;
     justify-content: space-between;
-    padding: 1rem;
-    margin-left: 2rem;
+    margin: 0.5rem 0 0 0;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.6rem;
+    color: white;
+    background-color: rgb(37, 3, 79);
 }
 
-.logEntries {
-    width: 75%;
-    padding: 1rem;
-}
-
-.message {
-    font-size: 1.7rem;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    width: 100%;
-}
-
-.entry-actions {
-    width: 23%;
-    padding: 1.9rem 1.28rem;
-}
-
-.edit {
-    font-size: 1.1rem;
-    padding: 0.7rem;
-    border-radius: 0.4rem;
-}
-
-.completed {
-    font-size: 1.1rem;
-    padding: 0.7rem;
-    border-radius: 0.4rem;
-}
-
-.delete {
-    font-size: 1.1rem;
-    padding: 0.7rem;
-    border-radius: 0.4rem;
-}
-
-.show{
-    padding-left: 4rem;
+.entry{
+    padding: 0.4rem;
+    width: 68%;
 }

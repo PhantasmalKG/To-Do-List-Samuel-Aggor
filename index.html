@@ -5,42 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Samuel Aggor" />
     <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>To Do App - Samuel Aggor</title>
   </head>
   <body>
-    <div class="todo-wrapper">
-      <div class="todo-body">
+    <!--To-Do Wrapper START-->
+    <div class="todoApp">
+      <div class="todo-container">
         <header>
-          <h1>To Do List - Samuel Aggor</h1>
-          <form>
-            <input type="text" id="new-entry-input"/>
-            <input type="submit" id="new-entry-submit"/>
-          </form>
+          <h1 class="todoTitle">TODO App</h1>
+          <div class="submit-new-task">
+            <input
+              type="text"
+              class="todo-input-wrapper"
+              placeholder="Please enter your next task...."
+            />
+            <button id="add">Add Task</button>
+          </div>
+          <div class="additional-selection-buttons">
+          </div>
         </header>
 
-        <main>
-          <section class="entry-log">
-            <h2>Task Entries</h2>
-            <div class="line"></div>
-            <div id="entries">
-              <div class="logEntries">
-                <input
-                  type="text"
-                  class="message"
-                  value="My First Task"
-                  readonly
-                />
-              </div>
-              <div class="entry-actions">
-                <button class="edit">Edit</button>
-                <button class="completed">Completed</button>
-                <button class="delete">Delete</button>
-              </div>
+        <div class="task-list" id="tasks">
+          <div class="task-entry">
+            <input type="checkbox">
+            <input class="white entry" type="text" value="My First TODO" disabled>
+            <div class="entry-options">
+              <button class="material-symbols-outlined blue">edit</button>
+              <button class="material-symbols-outlined green">check_box</button>
+              <button class="material-symbols-outlined red">delete</button>
             </div>
-          </section>
-        </main>
+          </div>
+          <div class="task-entry">
+            <input type="checkbox">
+            <input class="white entry" type="text" value="My First TODO" disabled>
+            <div class="entry-options">
+              <button class="material-symbols-outlined blue">edit</button>
+              <button class="material-symbols-outlined green">check_box</button>
+              <button class="material-symbols-outlined red">delete</button>
+            </div>
+          </div>
+          <div class="task-entry">
+            <input type="checkbox">
+            <input class="white entry" type="text" value="My First TODO" disabled>
+            <div class="entry-options">
+              <button class="material-symbols-outlined blue">edit</button>
+              <button class="material-symbols-outlined green">check_box</button>
+              <button class="material-symbols-outlined red">delete</button>
+            </div>
+          </div>
+          <div class="task-entry">
+            <input type="checkbox">
+            <input class="white entry" type="text" value="My First TODO" disabled>
+            <div class="entry-options">
+              <button class="material-symbols-outlined blue">edit</button>
+              <button class="material-symbols-outlined green">check_box</button>
+              <button class="material-symbols-outlined red">delete</button>
+            </div>
+          </div>
+          <div class="task-entry">
+            <input type="checkbox">
+            <input class="white entry" type="text" value="My First TODO" disabled>
+            <div class="entry-options">
+              <button class="material-symbols-outlined blue">edit</button>
+              <button class="material-symbols-outlined green">check_box</button>
+              <button class="material-symbols-outlined red">delete</button>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="tasks"></div>
     </div>
+    
+    <!--To-Do Wrapper END-->
 
     <script src="app.js"></script>
   </body>
