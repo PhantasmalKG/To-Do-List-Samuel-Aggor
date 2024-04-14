@@ -20,61 +20,29 @@
               class="todo-input-wrapper"
               placeholder="Please enter your next task...."
             />
-            <button id="add">Add Task</button>
+            <button id="add" class="add">Add Task</button>
           </div>
-          <div class="additional-selection-buttons">
-            <button>Select All</button>
-            <button>Complete Selected</button>
-            <button>Delete Selected</button>
+          <div class="additional-selection-buttons-1">
+            <button id="select-btn" class="select">Select All</button>
+            <button id="unselect-btn" class="unselect">Unselect All</button>
+          </div>
+          <div class="additional-selection-buttons-2">
+            <button id="complete-btn" class="complete">Complete Selected</button>
+            <button id="delete-btn" class="delete">Delete Selected</button>
           </div>
         </header>
 
         <div class="task-list" id="tasks">
           <div class="task-entry">
-            <input type="checkbox">
+            <input class="check-sizing" type="checkbox">
             <input class="white entry" type="text" value="My First TODO" disabled>
             <div class="entry-options">
-              <button class="material-symbols-outlined blue">edit</button>
-              <button class="material-symbols-outlined green">check_box</button>
-              <button class="material-symbols-outlined red">delete</button>
+              <button class="material-symbols-outlined xl blue">edit</button>
+              <button class="material-symbols-outlined xl green">check_box</button>
+              <button class="material-symbols-outlined xl red">delete</button>
             </div>
           </div>
-          <div class="task-entry">
-            <input type="checkbox">
-            <input class="white entry" type="text" value="My First TODO" disabled>
-            <div class="entry-options">
-              <button class="material-symbols-outlined blue">edit</button>
-              <button class="material-symbols-outlined green">check_box</button>
-              <button class="material-symbols-outlined red">delete</button>
-            </div>
-          </div>
-          <div class="task-entry">
-            <input type="checkbox">
-            <input class="white entry" type="text" value="My First TODO" disabled>
-            <div class="entry-options">
-              <button class="material-symbols-outlined blue">edit</button>
-              <button class="material-symbols-outlined green">check_box</button>
-              <button class="material-symbols-outlined red">delete</button>
-            </div>
-          </div>
-          <div class="task-entry">
-            <input type="checkbox">
-            <input class="white entry" type="text" value="My First TODO" disabled>
-            <div class="entry-options">
-              <button class="material-symbols-outlined blue">edit</button>
-              <button class="material-symbols-outlined green">check_box</button>
-              <button class="material-symbols-outlined red">delete</button>
-            </div>
-          </div>
-          <div class="task-entry">
-            <input type="checkbox">
-            <input class="white entry" type="text" value="My First TODO" disabled>
-            <div class="entry-options">
-              <button class="material-symbols-outlined blue">edit</button>
-              <button class="material-symbols-outlined green">check_box</button>
-              <button class="material-symbols-outlined red">delete</button>
-            </div>
-          </div>
+          
         </div>
       </div>
       <div class="tasks"></div>
