@@ -34,7 +34,7 @@ body {
     width: 50%;
     height: 70%;
     transform: translate(-50%, -60%);
-    background-color: whitesmoke;
+    background-color: rgb(48, 43, 43);
     box-shadow: .8rem .8rem .6rem black;
     border-radius: .7rem;
     padding: 1.5em 1em;
@@ -45,6 +45,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    color: var(--entry-font-color);
 }
 
 .todo-container header h1 {
@@ -81,7 +82,7 @@ body {
     color:var(--entry-font-color);
     border-radius: 0.5rem;
     flex-grow: 0.2;
-    transition: 0.5s ease-in;
+    transition: 0.5s ease-in-out;
 }
 .add:hover{
     background-color: greenyellow;
@@ -94,29 +95,45 @@ body {
     /* margin: 0.5rem; */
     width: 100%;
     padding: 1.2rem;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .select, .unselect, .complete, .delete{
     font-size: 2rem;
     padding: 1.7rem;
+    color: var(--entry-font-color);
     width: 50%;
     border-radius: 1rem;
-
-
+    transition: 0.5s ease-in-out;
 }
 
 .select{
-    background-color: cyan;
+    background-color: rgb(4, 26, 58);
 } 
 .unselect{
-    background-color: blueviolet;
+    background-color: rgb(48, 8, 85);
 } 
 .complete{
-    background-color: green;
+    background-color: rgb(7, 52, 7);
 } 
 .delete{
+    background-color: rgb(74, 5, 5);
+}
+.select:hover{
+    background-color: rgb(8, 134, 184);
+    color: black;
+} 
+.unselect:hover{
+    background-color: blueviolet;
+    color: black;
+} 
+.complete:hover{
+    background-color: rgb(49, 210, 49);
+    color: black;
+} 
+.delete:hover{
     background-color: red;
+    color: black;
 }
 
 
