@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-family: sans-serif;
     box-sizing: border-box;
     overflow: hidden;
@@ -71,8 +71,12 @@ body {
     border-radius: 0.8rem;
     padding: 0.4rem 1.5rem;
     flex-grow: 1;
-    
 }
+
+.todo-input-wrapper{
+
+}
+
 
 .add{
     font-size: 2rem;
@@ -109,15 +113,19 @@ body {
 
 .select{
     background-color: rgb(4, 26, 58);
+    font-size:2.5rem;
 } 
 .unselect{
     background-color: rgb(48, 8, 85);
+    font-size:2.5rem;
 } 
 .complete{
     background-color: rgb(7, 52, 7);
+    font-size:2.5rem;
 } 
 .delete{
     background-color: rgb(74, 5, 5);
+    font-size:2.5rem;
 }
 .select:hover{
     background-color: rgb(8, 134, 184);
@@ -135,15 +143,6 @@ body {
     background-color: red;
     color: black;
 }
-
-
-
-
-
-
-
-
-
 button {
     cursor: pointer;
     appearance: none;
@@ -165,6 +164,16 @@ button {
     color: red;
 }
 
+.blue, .green, .red{
+    opacity: 0.6;
+    transition: 0.3s ease-in-out;
+}
+
+.blue:hover, .green:hover, .red:hover{
+    opacity: 1;
+}
+
+
 .white {
     color: var(--entry-font-color);
 }
@@ -179,8 +188,6 @@ button {
     font-size: 3rem !important;
 }
 
-
-
 .task-entry {
     display: flex;
     align-items: center;
@@ -190,10 +197,19 @@ button {
     border-radius: 0.6rem;
     color: white;
     background-color: rgb(37, 3, 79);
+    transition: 0.10s ease-in-out;
+}
+
+.task-entry:hover,
+.task-entry:focus-within{
+    border: 3px solid white;
 }
 
 .entry {
     padding: 1rem;
     font-size: 1.5rem;
     width: 75%;
+    height: auto;
+    font-size:2.5rem;
+    word-wrap: break-word;
 }
